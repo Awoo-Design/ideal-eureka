@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>随机文案</title>
+    <title>一念香签</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -31,31 +31,40 @@
 <body>
 
 <div class="content">
-    <p class="quote" id="quote">加载中...</p>
+    <img class="quote" id="quote" src="" >加载中...</img>
 </div>
 
 <script>
     // 定义随机文案数组
     const quotes = [
-        "成功是最好的复仇。",
-        "生活不是等待暴风雨过去，而是学会在雨中跳舞。",
-        "做你害怕做的事，害怕就会消失。",
-        "每一个不曾起舞的日子，都是对生命的辜负。",
-        "努力工作，享受生活。",
-        "不怕路远，只怕心不坚。",
-        "让我们一起勇敢地向前走！"
+        "./images/NFC文案-01.jpg",
+        "./images/NFC文案-02.jpg",
+        "./images/NFC文案-03.jpg",
+        "./images/NFC文案-04.jpg",
+        "./images/NFC文案-05.jpg",
+        "./images/NFC文案-06.jpg",
+        "./images/NFC文案-07.jpg",
+        "./images/NFC文案-08.jpg",
+        "./images/NFC文案-09.jpg",
+        "./images/NFC文案-10.jpg",
+        "./images/NFC文案-11.jpg",
+        "./images/NFC文案-12.jpg",
+        "./images/NFC文案-13.jpg",
+        "./images/NFC文案-14.jpg",
+        "./images/NFC文案-15.jpg",
+        "./images/NFC文案-16.jpg"
     ];
 
-    // 获取随机文案并显示
+    // 获取随机图片并显示
     function getRandomQuote() {
         const randomIndex = Math.floor(Math.random() * quotes.length);
         return quotes[randomIndex];
     }
 
-    // 将随机文案显示在页面上
-    document.getElementById("quote").innerText = getRandomQuote();
+    // 将随机图片显示在页面上
+    //document.getElementById("quote").innerText = getRandomQuote();
+    document.getElementById("quote").src = getRandomQuote();
 </script>
 
 </body>
 </html>
-
