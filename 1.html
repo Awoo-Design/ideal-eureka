@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随机文案</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .content {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .quote {
+            font-size: 1.5em;
+            margin: 0;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <p class="quote" id="quote">加载中...</p>
+</div>
+
+<script>
+    // 定义随机文案数组
+    const quotes = [
+        "成功是最好的复仇。",
+        "生活不是等待暴风雨过去，而是学会在雨中跳舞。",
+        "做你害怕做的事，害怕就会消失。",
+        "每一个不曾起舞的日子，都是对生命的辜负。",
+        "努力工作，享受生活。",
+        "不怕路远，只怕心不坚。",
+        "让我们一起勇敢地向前走！"
+    ];
+
+    // 获取随机文案并显示
+    function getRandomQuote() {
+        const randomIndex = Math.floor(Math.random() * quotes.length);
+        return quotes[randomIndex];
+    }
+
+    // 将随机文案显示在页面上
+    document.getElementById("quote").innerText = getRandomQuote();
+</script>
+
+</body>
+</html>
