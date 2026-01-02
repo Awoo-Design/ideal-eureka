@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>这里是项目名，如（一念香签）</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .content {
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .quote {
+            font-size: 1.5em;
+            margin: 0;
+            color: #333;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <img class="quote" id="quote" src="" ></img>
+</div>
+
+<script>
+    // 定义随机文案数组
+    const quotes = [
+        "./images/文案-01.jpg",
+        "./images/文案-02.jpg",
+        "./images/文案-03.jpg"
+    ];
+
+    // 获取随机图片并显示
+    function getRandomQuote() {
+        const randomIndex = Math.floor(Math.random() * quotes.length);
+        return quotes[randomIndex];
+    }
+
+    // 将随机图片显示在页面上
+    //document.getElementById("quote").innerText = getRandomQuote();
+    document.getElementById("quote").src = getRandomQuote();
+</script>
+
+</body>
+</html>
+
